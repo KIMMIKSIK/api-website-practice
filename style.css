@@ -1,0 +1,136 @@
+.head-line {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+.head-line svg {
+  width: 430px;
+}
+
+.top-button {
+  display: none;
+  margin: 8px;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+.search {
+  margin: 8px;
+  margin-right: 2px;
+
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 5px;
+}
+.search:hover {
+  background-color: beige;
+}
+
+.search-input {
+  position: relative;
+  bottom: 2.5px;
+}
+.search-input button {
+  background-color: lightgreen;
+  border: 1px solid rgb(62, 233, 62);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 3px;
+}
+
+.search-input button:hover {
+  background-color: rgb(80, 206, 200);
+}
+
+.closebtn {
+  text-decoration: none;
+  color: #818181;
+  font-size: 3em;
+  margin: 5px;
+}
+.closebtn:hover {
+  color: beige;
+}
+.closebtn-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menus {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 4px double black;
+  flex-wrap: wrap;
+}
+.menus button {
+  border: none;
+  background: none;
+  margin: 5px;
+}
+.menus button:hover {
+  background-color: beige;
+}
+.news-image {
+  max-width: 100%;
+  max-height: 250px;
+}
+
+.news {
+  border-bottom: 2px solid black;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.side-nav button {
+  padding: 8px;
+  font-size: 25px;
+  color: #818181;
+
+  transition: 0.3s;
+  border: none;
+  background: none;
+}
+.side-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-nav button:hover {
+  color: #f1f1f1;
+}
+@media screen and (max-height: 450px) {
+  .side-nav {
+    padding-top: 15px;
+  }
+  .side-nav button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menus {
+    display: none;
+  }
+  .top-button {
+    display: inline;
+  }
+}
+
+.content-box {
+  border-bottom: 2px solid black;
+}
+.pagination {
+  justify-content: center;
+}
